@@ -1,12 +1,12 @@
 # VAR
 
 ```js
-console.log(a); //Result = UNDEFINED because Var declaration is **hoisted** and initialized in top level.
+console.log(a); //Result = UNDEFINED because Var declaration is hoisted and initialized in top level.
 var a;
 var a = 5;
 console.log(a); //Result = 5
 var a = 6;
-console.log(a); //Result = 6 because var can be **reinitilized** and **redeclared**.
+console.log(a); //Result = 6 because var can be reinitilized and redeclared.
 ```
 
 ```js
