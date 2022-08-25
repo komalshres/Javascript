@@ -172,6 +172,73 @@ console.log("Javascript is fun".search("fun")); // Output : 14
 console.log("Javascript is fun".search("java")); // Output : returns -1 since java couldn't be found
 ```
 
+#### includes()
+
+Checks if given string is found inside a string
+
+**includes syntax**
+
+```
+str.includes(searchString, position);
+```
+
+```js
+console.log("Javascript is fun".includes("Javascript")); // Output : true
+console.log("Javascript is fun".includes("Javascript", 20)); // Output : false
+```
+
+#### repeat()
+
+Returns a string by repeating it given times
+
+```js
+console.log("Hello!!!".repeat(3)); // Output : Hello!!!Hello!!!Hello!!!
+console.log("Hello!!!".repeat(3.2)); // Output : Hello!!!Hello!!!Hello!!!
+console.log("Hello!!!".repeat(-1)); // Output : Uncaught RangeError: Invalid count value: -1
+```
+
+#### charAt()
+
+Returns character at a specified index in string
+
+```js
+console.log("Javascript".charAt(2)); // Output : v
+console.log("Javascript".charAt())); // Output : J
+```
+
+#### charCodeAt()
+
+Returns Unicode of the character at given index
+
+```js
+console.log("Javascript".charCodeAt(2)); // Output : 118
+console.log("JaVascript".charCodeAt(2)); // Output : 86 // Since, js is case sensitive
+```
+
+#### fromCharCode()
+
+Returns a string from the given UTF-16 code units
+
+```js
+console.log(String.fromCharCode(72, 69, 76, 76, 79));
+```
+
+#### padStart()
+
+Pads a string at the start to a given length
+
+```js
+console.log("98-XXX-XXXX".padStart(16, "+977-")); // Output : +977-98-XXX-XXXX
+```
+
+#### padEnd()
+
+Pads a string at the end to a given length
+
+```js
+console.log("98".padStart(10, "*")); // Output : 98*******
+```
+
 #### replace()
 
 Returns string by replacing all matching patterns
