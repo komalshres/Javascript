@@ -1,0 +1,18 @@
+.marksheet-container .mark-sheet {
+  border: 1px solid #000;
+  padding: 20px 50px;
+  margin-bottom: 20px;
+}
+.marksheet-container .mark-sheet h2 {
+  text-align: center;
+}
+.marksheet-container .mark-sheet table,
+.marksheet-container .mark-sheet th,
+.marksheet-container .mark-sheet td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.marksheet-container .mark-sheet th,
+.marksheet-container .mark-sheet td {
+  background-color: #f1f1f1;
+}/*# sourceMappingURL=style.css.map */

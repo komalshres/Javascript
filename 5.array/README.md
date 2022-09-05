@@ -42,6 +42,21 @@ console.log(["komal", "rakesh", "visit"].indexOf("visit")); // Output : 2
 console.log(["komal", "rakesh", "visit"].indexOf("helllo")); // Output : -1
 ```
 
+### includes()
+
+The includes() method returns true if a string contains a specified string else returns false
+** Syntax **
+
+```
+string.includes(searchvalue, start)
+```
+
+```js
+const greeting = "Hello, This is javascript";
+console.log(greeting.includes("Hello"));
+console.log(greeting.includes("Hello", 15));
+```
+
 ### join()
 
 join() returns array as an string
@@ -133,12 +148,116 @@ let checkArray = Array.isArray(arr);
 console.log(checkArray); // Output false
 ```
 
-1. indexOf
-2. join
-3. length
-4. map
-5. pop
-6. push
-7. **reduce**
-8. silce
-9. splice
+# Multi-dimensional array
+
+Array in which each element is an array is known as multidimendional array.
+
+### Example
+
+```js
+const num = [
+  [1, 2, 3],
+  [8, 2, 1],
+  [7, 2, 0],
+];
+```
+
+### Accessing multidimensional array
+
+You can access multidimensional array by using the indices
+
+```js
+const num = [
+  [1, 2, 3],
+  [8, 2, 1],
+  [7, 2, 0],
+];
+console.log(num[0][2]); // Output : 3
+```
+
+### Iterating over Multidimensional Array
+
+```js
+const num = [
+  [1, 2, 3],
+  [8, 2, 1],
+  [7, 2, 0],
+];
+for (let i = 0; i < num.length; i++) {
+  for (let j = 0; j < num[i].length; j++) {
+    console.log(num[i][j]);
+  }
+}
+```
+
+### Adding and removing elements to multidimensional array
+
+You can use the Array methods such as push(), pop() and splice() to manipulate elements of a multidimensional array. This is similar to 1D array as shown in examples above.
+
+#### Adding Element to the Outer Array
+
+```js
+const num = [
+  [1, 2, 3],
+  [8, 2, 1],
+  [7, 2, 0],
+];
+num.push([3, 9, 8]);
+```
+
+### Adding element to inner array
+
+```js
+const num = [
+  [1, 2, 3],
+  [8, 2, 1],
+  [7, 2, 0],
+];
+num[1][3] = 4;
+console.log(num);
+
+Output: [
+  [1, 2, 3],
+  [8, 2, 1, 4],
+  [7, 2, 0],
+];
+```
+
+#### Remove an Element from a Multidimensional Array
+
+Similar to 1d array you can yo pop to remove element form multi dimensional array as well
+
+```js
+const num = [
+  [1, 2, 3],
+  [8, 2, 1],
+  [7, 2, 0],
+];
+num.pop();
+console.log(num);
+Returns: [7, 2, 0];
+Output: [1, 2, 3][(8, 2, 1)];
+```
+
+Note: Similar to 1d array splice can also be used to add or remove element in multidimensional array.
+
+### Other example of multidimensional array
+
+```js
+const num = [
+  [
+    [1, 2, 3],
+    [4, 5, 6],
+  ],
+  [
+    [2, 3, 4],
+    [3, 7, 8],
+  ],
+  [
+    [1, 2, 6],
+    [3, 4, 9],
+  ],
+];
+
+console.log(num[1][1][1]); // Output : 7
+```

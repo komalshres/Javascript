@@ -165,3 +165,61 @@ for (let x in person) {
   txt += person[x] + " ";
 }
 ```
+
+```js
+const number = [1, 2, 3, 4, 5, 6];
+
+let num = "";
+for (let x in number) {
+  num += number[x];
+}
+```
+
+```js
+const number = [1, 2, 3, 4, 5, 6];
+
+let num = [];
+for (let x in number) {
+  num.push(number[x]);
+}
+```
+
+### for...of
+
+The for...of statement executes a loop that operates on a sequence of values sourced from an iterable object.
+
+**syntax**
+
+```js
+for (variable of iterable) {
+  // code block to be executed
+}
+```
+
+```js
+let city = ["kathmandu", "bhaktapur", "lalitpur"];
+
+let text = "";
+for (let x of city) {
+  text += x + " ";
+}
+```
+
+#### Looping over string
+
+```js
+let language = "JavaScript";
+
+let text = "";
+for (let x of language) {
+  text += x;
+}
+```
+
+// anonymous function
+// call by reference or call by value
+// HOF / First class citizen
+// IIFE
+// FUNCTION EXPRESSION FUNCTION CONSTRUCTOR
+// ARROW FUNCTIONS
+// dom manupulation
