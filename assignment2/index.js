@@ -1,7 +1,7 @@
 /** Marksheets of students */
 const marksheet = [
   {
-    name: "Amisha Rijal",
+    name: "Ram",
     class: 12,
     roll: 13,
     subjects: [
@@ -44,7 +44,7 @@ const marksheet = [
   },
 
   {
-    name: "Santosh Sharma",
+    name: "Shyam",
     class: 12,
     roll: 11,
     subjects: [
@@ -86,7 +86,7 @@ const marksheet = [
     ],
   },
   {
-    name: "Agya Aryal",
+    name: "Hari",
     class: 12,
     roll: 11,
     subjects: [
@@ -129,7 +129,7 @@ const marksheet = [
   },
 
   {
-    name: "Kripa Pokhrel",
+    name: "Geeta",
     class: 12,
     roll: 11,
     subjects: [
@@ -218,6 +218,7 @@ marksheet.forEach((element) => {
     </div>
   `.trim();
 });
+console.log(marksheetHTML);
 const getMarksheet = document.getElementById("marksheet");
 getMarksheet.innerHTML = marksheetHTML;
 
